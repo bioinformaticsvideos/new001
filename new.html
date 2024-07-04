@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISRO Simulator App with 3D Airplane</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>ISRO Simulator App with 3D Airplane</h1>
+            <div class="mission-overview">
+                <h2>Mission Overview</h2>
+                <p>Welcome to the ISRO Simulator Space!!!</p>
+                <input type="text" id="question" placeholder="Ask something...">
+                <button onclick="askQuestion()">Send</button>
+            </div>
+            <div class="simulator-controls">
+                <h2>Simulator Controls</h2>
+                <div class="launch-controls">
+                    <button onclick="launch()">Launch</button>
+                    <button onclick="abort()">Abort</button>
+                </div>
+                <div class="navigation">
+                    <button onclick="moveForward()">Forward</button>
+                    <button onclick="moveBackward()">Backward</button>
+                    <button onclick="turnLeft()">Turn Left</button>
+                    <button onclick="turnRight()">Turn Right</button>
+                </div>
+            </div>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>For support: Call +1 (123) 456-7890</p>
+                <p>Email: support@ISROapp.com</p>
+            </div>
+        </div>
+        <div class="main">
+            <div id="threejs-canvas"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
